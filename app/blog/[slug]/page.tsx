@@ -4,3 +4,10 @@ export default function BlogArticle({params}: {params:{slug:string}}) {
     )
 
 }
+
+*[_type == "blog" && slug.current == 'positive-work-culture']{
+    "currentSlug": slug.current,
+      title,
+      content,
+      titleImage,
+  }[0]

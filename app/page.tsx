@@ -1,6 +1,6 @@
 import Image from "next/image";
 import {client, urlFor} from "./lib/sanity";
-import { simpleBlogCard } from "@/lib/interface";
+import { simpleBlogCard } from "@/app/lib/interface";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";

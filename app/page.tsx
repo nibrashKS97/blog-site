@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button"
 
+export const revalidate = 30; // revalidate at most 30 seconds
 
 async function getData() {
   const query = `

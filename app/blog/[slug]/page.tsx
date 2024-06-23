@@ -27,15 +27,17 @@ export default async function BlogArticle({params}: {params:{slug:string}}) {
                 <span className="block text-base text-center text-primary font-bold tracking-wide uppercase">*Blog Category*</span>
                 <span className="block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl">{data.title}</span>
             </h1>
-            <Image 
+            <div className="container mx-auto">
+                <Image 
                 src={urlFor(data.titleImage).url()}
                 width={800}
                 height={800}
                 alt="Title Image"
                 priority
-                className="rounded-lg mt-8 border"
-            />
-            <div className="mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
+                className="rounded-lg object-cover mt-8 border"
+                />
+            </div>
+            <div className="mx-auto mt-16 prose max-w-prose-lg prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
                 <PortableText value={data.content} />
             </div>
         </div>

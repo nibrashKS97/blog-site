@@ -58,6 +58,9 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      maxWidth: {
+        'prose-lg': '75ch',
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

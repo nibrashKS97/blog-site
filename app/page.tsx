@@ -31,8 +31,8 @@ export default async function Home() {
             <Image 
             src={urlFor(post.titleImage).url()}
             alt="image"
-            width={768}
-            height={768}
+            width={700}
+            height={700}
             className="rounded-t-lg h-[200px] object-cover"
             />
 
